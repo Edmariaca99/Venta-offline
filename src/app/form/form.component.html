@@ -1,0 +1,163 @@
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2 mt-5">
+            <div class="input-group">
+                <div class="input-group-text fas fa-address-card"></div>
+                <input type="number" class="form-control" placeholder="Documento" aria-label="Documento" id="documento"  [formControl]="documentoCtrl">
+            </div>
+        </div>
+       <!-- <div>
+            <p *ngIf="documentoCtrl.errors && documentoCtrl.dirty">
+              <small *ngIf="documentoCtrl.hasError('required')">El campo es requerido</small>
+              <small *ngIf="documentoCtrl.hasError('maxlength')">Debe ser mínimo de 10</small>
+              <small *ngIf="documentoCtrl.hasError('minlength')">Debe ser mínimo de 7</small>
+            </p>
+        </div>-->
+        <div class="col col-lg-2 mt-5">
+            <div class="input-group">
+                <div class="input-group-text fas fa-user"></div>
+                <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="name" [formControl]="nameCtrl">
+            </div>
+        </div>
+    
+        <!--<div>
+            <p *ngIf="nameCtrl.errors && nameCtrl.dirty">
+              <small *ngIf="nameCtrl.hasError('required')">El campo es requerido</small>
+              <small *ngIf="nameCtrl.hasError('minlength')">Debe ser mínimo de 4</small>
+            </p>
+        </div>-->
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2 mt-4">
+            <div class="input-group">
+                <div class="input-group-text fas fa-user"></div>
+            <input type="text" class="form-control" placeholder="Apellidos"  aria-label="Apellidos" id="apelli"  [formControl]="apellidoCtrl">
+            </div>
+        </div>
+       <!-- <div>
+            <p *ngIf="apellidoCtrl.errors && apellidoCtrl.dirty">
+              <small *ngIf="apellidoCtrl.hasError('required')">El campo es requerido</small>
+              <small *ngIf="apellidoCtrl.hasError('minlength')">Debe ser mínimo de 4</small>
+            </p>
+        </div>-->
+        <div class="col col-lg-2 mt-4">
+            <div class="input-group">
+                <div class="input-group-text fas fa-map"></div>
+                <input type="text" class="form-control" placeholder="Departamento" aria-label="Departamento" id="depar" [formControl]="departamentoCtrl">
+            </div>    
+        </div>
+        <!-- <div>
+            <p *ngIf="departamentoCtrl.errors && departamentoCtrl.dirty">
+              <small *ngIf="departamentoCtrl.hasError('required')">El campo es requerido</small>
+              <small *ngIf="departamentoCtrl.hasError('minlength')">Debe ser mínimo de 4</small>
+            </p>
+        </div>-->
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2 mt-4">
+            <div class="input-group">
+                <div class="input-group-text fas fa-map"></div>
+                <input type="text" class="form-control" placeholder="Ciudad" aria-label="Ciudad" id="ciudad" [formControl]="ciudadCtrl">
+            </div>
+        </div>
+        <!-- <div>
+            <p *ngIf="ciudadCtrl.errors && ciudadCtrl.dirty">
+              <small *ngIf="ciudadCtrl.hasError('required')">El campo es requerido</small>
+              <small *ngIf="ciudadCtrl.hasError('minlength')">Debe ser mínimo de 4</small>
+            </p>
+        </div>-->
+        <div class="col col-lg-2 mt-4">
+            <div class="input-group">
+                <div class="input-group-text fas fa-phone"></div>
+                <input type="text" class="form-control" placeholder="Direccion" aria-label="Direccion" id="direccion" [formControl]="direccionCtrl">
+            </div>
+        </div>
+    
+        <!-- <div>
+            <p *ngIf="direccionCtrl.errors && direccionCtrl.dirty">
+              <small *ngIf="direccionCtrl.hasError('required')">El campo es requerido</small>
+              <small *ngIf="direccionCtrl.hasError('minlength')">Debe ser mínimo de 4</small>
+            </p>
+        </div>-->
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2 mt-4">
+            <div class="input-group">
+                <div class="input-group-text fas fa-phone"></div>
+                    <input  type="number"  class="form-control" placeholder="Telefono" aria-label="Telefono" id="telefono" [formControl]="telefonoCtrl">
+                </div>
+        </div>
+        <!-- <div>
+            <p *ngIf="telefonoCtrl.errors && telefonoCtrl.dirty">
+              <small *ngIf="telefonoCtrl.hasError('required')">El campo es requerido</small>
+              <small *ngIf="telefonoCtrl.hasError('minlength')">Debe ser mínimo de 7</small>
+              <small *ngIf="telefonoCtrl.hasError('maxlength')">Debe ser mínimo de 10</small>
+            </p>
+        </div>-->
+        <div class="col col-lg-2 mt-4">
+            <div class="input-group">
+                <div class="input-group-text fas fa-envelope"></div>
+                <input type="email" class="form-control" placeholder="Email" aria-label="Email" id="email" [formControl]="emailCtrl">   
+            </div>
+        </div>
+    
+        <!-- <div>
+            <p *ngIf="emailCtrl.errors && emailCtrl.dirty">
+              <small *ngIf="emailCtrl.hasError('required')">El campo es requerido</small>
+              <small *ngIf="emailCtrl.hasError('minlength')">Debe ser mínimo de 4</small>
+            </p>
+        </div>-->
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col-auto mt-4">
+            <div class="col-auto">
+                <select class="form-select" id="mpagos" >
+                    <option selected>Medios de Pago</option>
+                    <option value="1">Tarjeta 1</option>
+                    <option value="2">Tarjeta 2</option>
+                    <option value="3">Tarjeta 3</option>
+                </select>
+            </div>
+        </div>
+    </div>
+        <div>
+            <p *ngIf="pagosCrtrl.errors && pagosCrtrl.dirty">
+              <small *ngIf="pagosCrtrl.hasError('required')">El campo es requerido</small>
+            </p>
+        </div>
+    <div class="row justify-content-md-center">
+        <div class="col col-lg-2 mt-2">
+            <table class="table table-bordered mt-4">
+                <thead>
+                    <tr class="table-primary">
+                        <th>Medio de pago</th>
+                        <th>Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Tarjeta 1</td>
+                        <td>$ 50.000</td>
+                    </tr>
+                    <tr>
+                        <td>Tarjeta 2</td>
+                        <td>$ 40.000</td>
+                    </tr>    
+                </tbody>
+            </table>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="text-center mt-4">
+                <h6>TOTAL:</h6>
+                <h6>Pagado:</h6>
+                <h6>Pendiente:</h6>
+                <h6>Devolucion:</h6>
+            </div>
+            <a routerLink="/factura" 
+             routerLinkActive="active">
+        <button class="btn btn-primary " [disabled]="emailCtrl.invalid" type="button" (click)="getData($event)">Pagar</button>
+        </a>
+        </div>
+        
+    </div>
+</div>

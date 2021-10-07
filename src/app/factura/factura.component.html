@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="row">
+    <div id="pdfTable" #pdfTable class=" fw-bolder text-center " style="margin-top: 5%;">
+        <div class="mt-05">
+            <h6>DISSEN SAS</h6>
+            <h6>TIENDA 1</h6>
+            <h6>TERMINAL 1001</h6>
+            <h6>FECHA 27/09/2021</h6>
+            <h6>FACTURA 1</h6>
+        </div>
+  
+      <table class="table table-bordered mt-4">
+        <thead>
+            <tr class="table-primary">
+                <th>Articulo</th>
+                <th>Cantidad</th>
+                <th>Valor</th>
+        </tr>
+        </thead>
+        <tbody>
+          <!-- <tr *ngFor="let game of VIDEOGAMES">
+                <th>{{articulo.id}}</th>
+                <td>{{articulo.cantidad}}</td>
+                <td>{{articulo.valor}}</td>
+              </tr>
+            --> 
+          <tr>
+            <td>011802 Brasier leonisa</td>
+            <td>1</td>
+            <td>$ 80.000</td>
+        </tr>  
+        </tbody>
+      </table>
+      <div  >
+        <div style="margin-top: 10%; margin-left: -50%;">
+            <p class="fw-bold">TOTAL: </p>
+            <p class="fw-bold">Pagado: </p>
+            <p class="fw-bold">Pendiente: </p>
+            <p class="fw-bold">Devolucion: </p>
+        </div>
+
+        <div style="margin-top: -15%; margin-left: 40%;">
+            <p class="fw-bold">$ 90.000 </p>
+            <p class="fw-bold">$ 90.000 </p>
+            <p class="fw-bold">$ 0 </p>
+            <p class="fw-bold">$ 0 </p>
+        </div>
+    </div>
+    </div>
+    <div style="margin-top: 10%; margin-left: 70%;">
+        <button class="btn btn-primary" (click)="downloadAsPDF();">Imprimir</button>
+    </div>
+    <div style="margin-top: 10%; margin-left: 70%;">
+      <a routerLink="/ventas" 
+      routerLinkActive="active"><button class="btn btn-primary">Inicio</button></a>
+  </div>
+    
+    
+</div>
+  </div>

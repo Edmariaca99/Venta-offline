@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <div class="col"  style="margin-top: 0%;">
+          <a routerLink="/busqueda" 
+             routerLinkActive="active">
+            <button type="button" class="btn btn-primary   mt-5 margin-left-5 ">Nueva venta</button>
+          </a>
+
+        </div>
+        <div class="col" style="margin-top: 0%; margin-left: 55%;">
+            <button type="button" class="btn btn-outline-danger   mt-5 ">Salir de Offline</button>
+        </div>
+      
+        <div>
+        <table class="table mt-5">
+            <thead>
+              <tr>
+                <th al>Pedidos Guardados</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Item 1</th>
+              </tr>
+            </tbody>
+        </table>
+        </div>
+        <div class="text-center mt-5">
+          <p>Ultima fecha de sincronización:{{fecha}}</p>
+        </div>
+    </div>
+</div>
+
+
+<div *ngIf="noInternetConnection" style="text-align: center;">    
+  
+  <h5>No hay conexion</h5>
+    <img width="111px" src="img/int1.png" alt="Wifi Connecred" />    
+  
+  </div>    
+  
+  <div *ngIf="!noInternetConnection" style="text-align: center;">     
+  
+      <h5>Hay conexion</h5>    
+  
+      <img width="111px" src="img/int1.png" alt="Wifi Disconnected" />    
+  
+  </div>    

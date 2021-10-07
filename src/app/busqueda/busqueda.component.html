@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="btn-group mt-5" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+            <label class="btn btn-outline-primary" for="btnradio1">SKU</label>
+            <input type="radio" class="btn-check mt-5" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio2">EAN</label>
+        </div>
+        <div class="d-flex align-items-center">   
+            <form class="w-100 me-3 mt-5" >
+                <input type="search" class="form-control" placeholder="Búsqueda" aria-label="Search">
+            </form>
+        </div>
+        <div style="text-align: center; ">
+            <h5 class="mt-5">Pedidos</h5>
+
+            <table class="table table-bordered mt-5">
+                <tbody>
+                  <tr>
+                    <a routerLink="/form" 
+                    routerLinkActive="active">
+                        <th>Item 1</th>
+                    </a>
+                    <th>Item 1</th>
+                    
+                  </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="position-relative mt-5 ">
+            <div class="position-absolute top-50 bottom-50 end-50">
+                <h6>SUBTOTAL:</h6>
+                <h6>IMPUESTO:</h6>
+                <h6>TOTAL:</h6>
+            </div>
+        </div>
+    </div>
+</div>
